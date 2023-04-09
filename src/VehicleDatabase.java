@@ -24,7 +24,7 @@ class VehicleDatabase {
     private void createConnection() throws SQLException, ClassNotFoundException {
         String url = "jdbc:sqlserver://database-1.csxdtihcei8o.us-east-1.rds.amazonaws.com:1433;DatabaseName=VehicleReservationSystem;encrypt=true;trustServerCertificate=true";
         String user = "admin";
-        String password = "20020720xi";
+        String password = "";
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         connection = DriverManager.getConnection(url, user, password);
     }
